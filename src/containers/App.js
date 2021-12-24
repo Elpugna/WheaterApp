@@ -25,7 +25,7 @@ function App() {
   const onSearch= async(ciudad)=> {
     //Llamado a la API del clima
     try {
-      let resp = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`);
+      let resp = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`);
       if(resp.data.main !== undefined){
         if(cities.find(e=>e.id===resp.data.id)){
           return alert("That city already exists!!")
