@@ -82,7 +82,8 @@ const NavWrapper = styled.nav`
   align-items: center;
   width: 100vw;
   height: 3.5rem;
-  background-color: ${({theme})=>theme.colors.nav.background};
+  background: ${({theme})=> (`linear-gradient(to bottom, ${theme.colors.nav.top}, ${theme.colors.nav.bottom})`)};
+  //background-color: ${({theme})=>theme.colors.nav.background};
   color: ${({theme})=>theme.colors.text};
   position:fixed;
   top:0;

@@ -20,7 +20,9 @@ export const theme = {
 export const light ={
   colors:{
     nav:{
-      background:'#79AD7D',
+      background: "red",
+      top: "#00bfff",
+      bottom:'#0095ff',
     },
     searchIcon:{
       background:'#393e46'
@@ -39,6 +41,8 @@ export const dark = {
   colors:{
     nav:{
       color:'628C66',
+      top:"#301c45",
+      bottom:"#1F1C45",
       background:"#1F1C45",
     },
     searchIcon:{

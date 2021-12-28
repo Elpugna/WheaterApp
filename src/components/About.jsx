@@ -7,7 +7,7 @@ export default function About(){
         <h4>About the App:</h4>
         <p>I made this app fully responsive. If you navigate with a smartphone you will see the side menu is displayed when clicking the menu button. The search bar expands as well in both smartphones and tablet size devices. </p>
         <p>
-          It has some cool features as the dark theme, that activates depending on your browser's settings. If you change it, it will store that state and your browser will "remember" your choice next time you drop by. 
+          It has some other cool features as the dark theme, that activates depending on your browser's default settings. If you change the mode, it will store that state and your device's browser will "remember" your choice next time you drop by. 
         </p>
         <p>
           It retrieves the information from the <a href="https://openweathermap.org" target="_blank" rel="noreferrer">openweathermap's API</a>. It shares the temperature and weather of a city of your choice. In this proyect I used:
@@ -58,7 +58,7 @@ export default function About(){
           </a>
 
         </div>
-        <h3>Get in touch:</h3>
+        <h3>Let's keep in touch:</h3>
         <div>
 
         <a href="https://github.com/Elpugna" target="_blank" rel="noreferrer">

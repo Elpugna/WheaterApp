@@ -29,7 +29,7 @@ body {
   padding: 0;
   display: flex;
   justify-content: center;
-  background: ${({ theme }) => theme.colors.background.dark};
+  background: ${({ theme }) => theme.colors.background.light};
   height: 100vh;
   width: 100vw;
   transition: background 0.7s ease-out;

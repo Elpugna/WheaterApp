@@ -69,7 +69,8 @@ const CardContainer = styled.div`
   cursor:pointer;
 
   font-size:${({theme})=> theme.fonts.small};
-  background: ${({theme})=>theme.colors.nav.background};
+  //background: ${({theme})=>theme.colors.nav.background};
+  background: ${({theme})=> (`linear-gradient(to bottom, ${theme.colors.nav.top}, ${theme.colors.nav.bottom})`)};
   color: ${({theme})=>theme.colors.text};
 
   transition: all 0.3s ease-in, background 0.7s ease-in-out;
