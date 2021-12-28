@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {UilCloudQuestion , UilTemperatureHalf,UilTemperatureEmpty,UilTemperature,UilX } from '@iconscout/react-unicons';
 
 
-export default function Card ({Wdesc, Tactual,Tmin, Tmax, name, Wimg, Wstatus, onClose, id}) {
+export default function Card ({Wdesc,Wstatus,Wimg, Tactual,Tmin, Tmax, name,   onClose, id}) {
   const navigate = useNavigate();
   // let timeZone= zone/3600; 
   // if(timeZone>0){
@@ -78,7 +78,7 @@ const CardContainer = styled.div`
   @media screen and (min-width:${({theme})=>theme.mobile}){
     font-size:${({theme})=> theme.fonts.medium};
     width: 60%;
-    height: 15rem;
+    height: 12rem;
     padding: 1rem;
     margin:0;
     margin-top:1rem;
@@ -102,6 +102,9 @@ const Header = styled.div`
   @media screen and (min-width:${({theme})=>theme.mobile}){
     font-size:${({theme})=> theme.fonts.xtitle};
   }
+  @media screen and (min-width:${({theme})=>theme.tablet}){
+    font-size: 3rem;
+  }
 `;
 
 
@@ -117,6 +120,9 @@ const Body = styled.div`
   padding: 0 1rem;
   margin: 0 1rem;
   
+  @media screen and (min-width:${({theme})=>theme.tablet}){
+    margin: 0 0.5rem;
+  }
 `;
 
 const BodyInfo = styled.div`
@@ -135,6 +141,10 @@ const BodyInfo = styled.div`
     justify-content:center;
     align-items:center;
   }
+
+  @media screen and (min-width:${({theme})=>theme.tablet}){
+    flex-direction:row;
+  }
 `;
 
 const Info = styled.div`
@@ -144,11 +154,18 @@ const Info = styled.div`
   p:first-child{
     white-space: nowrap;
     font-size:${({theme})=> theme.fonts.medium};
+
+
   }
 
   @media screen and (min-width:${({theme})=>theme.mobile}){
     p:first-child{
       font-size:${({theme})=> theme.fonts.title};
+    }
+  }
+  @media screen and (min-width:${({theme})=>theme.tablet}){
+    p:first-child{
+      font-size: 4rem;
     }
   }
 `;
