@@ -87,7 +87,7 @@ const Div = styled.div`
   flex-flow:column nowrap;
   justify-content:center;
   align-items:baseline;
-  background: ${({theme})=>theme.colors.background.dark};
+  background: ${({theme})=>theme.colors.background.light};
   backdrop-filter: blur(6px);
   color:${({theme})=>theme.colors.text};
   transition:all 0.7s ease-in;

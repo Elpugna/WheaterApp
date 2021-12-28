@@ -77,7 +77,7 @@ const CardContainer = styled.div`
 
   @media screen and (min-width:${({theme})=>theme.mobile}){
     font-size:${({theme})=> theme.fonts.medium};
-    width: auto;
+    width: 60%;
     height: 12rem;
     padding: 1rem;
     margin:0;
